@@ -356,6 +356,7 @@ body{
 /* -------------------- MEDIA QUERIES -------------------- */
 
 @media only screen and (min-width:1024px){
+    /* header */
     .burgermenu {
         display: none;
     }
@@ -479,6 +480,7 @@ body{
 }
 
 @media only screen and (max-width:768px){
+    /* generel styling */
     h1{
         font-size: 50px;
     }
