@@ -264,6 +264,74 @@ nav> a:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
 
+
+/* -------------------- INSTAGRAM FEED -------------------- */
+
+.instagram-section {
+    margin: 5%;
+    position: relative;
+}
+
+
+#instagram-mobil{
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 55%;
+    transform: rotate(345deg);
+}
+
+.instagram-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 40px;
+}
+
+.instagram-feed {
+    position: relative;
+  }
+  
+  .instagram-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .instagram-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #586056d4;
+  }
+  
+  .instagram-feed:hover .instagram-overlay {
+    opacity: 1;
+  }
+  
+  .instagram-text {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .instagram-text:hover {
+    font-size: 30px;
+    transition: .5s ease;
+  }
 /* -------------------- MEDIA QUERIES -------------------- */
 
 @media only screen and (max-width:1024px){
