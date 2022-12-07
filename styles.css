@@ -110,9 +110,15 @@ p {
     color: #343B34;
 }
 
+.beige-font {
+    color: #EFECE6;
+}
+
 body{
     background-color: #EFECE6;
 }
+
+
 
    /* navbar*/
 /* placering af menupunkterne af navbaren */
@@ -322,7 +328,6 @@ nav> a:hover{
   }
   
   .instagram-text {
-    color: #EFECE6;
     position: absolute;
     top: 50%;
     left: 50%;
