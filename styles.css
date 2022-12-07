@@ -67,11 +67,13 @@ h1 {
     font-weight: 100;
     font-style: normal;
     text-transform: uppercase;
+    color: #343B34;
 }
 
 h2{
     font-size: 140px;
     font-family: Qwitcher;
+    color: #343B34;
 }
 
 h3 {
@@ -80,6 +82,7 @@ h3 {
     font-weight: 100;
     font-style: normal;
     text-transform: uppercase;
+    color: #343B34;
 }
 
 h4 {
@@ -87,6 +90,7 @@ h4 {
     font-family: josefin-sans, sans-serif;
     font-weight: 100;
     font-style: normal;
+    color: #343B34;
 }
 
 p {
@@ -94,6 +98,7 @@ p {
     font-family: josefin-sans, sans-serif;
     font-weight: 100;
     font-style: normal;
+    color: #343B34;
 }
 
 .priser {
@@ -102,6 +107,7 @@ p {
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
+    color: #343B34;
 }
 
 body{
