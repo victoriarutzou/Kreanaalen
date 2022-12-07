@@ -293,6 +293,11 @@ nav> a:hover{
     transform: rotate(345deg);
 }
 
+#instagram-mobil:hover {
+    transform: rotate(340deg);
+    transition: .5s ease;
+}
+
 .instagram-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
