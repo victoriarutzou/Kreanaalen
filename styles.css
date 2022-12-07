@@ -109,8 +109,6 @@ body{
 }
 
    /* navbar*/
-
-
 /* placering af menupunkterne af navbaren */
 .desktopmenu1{
     display: flex;
@@ -119,8 +117,6 @@ body{
     padding-top: 30px;
 }
 
-
-
 /* styling af a tags i headeren om ikke skal have drop down */
 .desktopmenu1 > a{
     font-style: normal;
@@ -128,15 +124,11 @@ body{
     font-size: 16px;
     text-decoration:none;
     text-transform: uppercase;
-
-
 }
 
 nav> a:hover{
     font-weight: 800;
 }
-
-
 
 .desktopmenu2{
     display: flex;
@@ -234,43 +226,42 @@ nav> a:hover{
     }
 
 
-    /*sektion forside - kunde anmeldelser*/
+/*sektion forside - kunde anmeldelser*/
 
-    /*Errorside*/
+/*Errorside*/
 
     body{
-        background-color: #EFECE6; 
+    background-color: #EFECE6; 
+    }
         
-        }
-        
-        .errorbillede{
-            display: flex;
-            justify-content: center;
-            background-image:url("images/baggrundtstjerner.png");
-            
-        }
-        .errortekst{
-        display: flex;
-        color:#343B34;
-        justify-content: center;
-        padding-top: 2%;
-        padding-bottom: 50px;
-        font-size: x-large;
-        text-align: center;
-        line-height: 150%;
-        }
+    .errorbillede{
+    display: flex;
+    justify-content: center;
+    background-image:url("images/baggrundtstjerner.png");
+    }
+    
+    .errortekst{
+    display: flex;
+    color:#343B34;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 50px;
+    font-size: x-large;
+    text-align: center;
+    line-height: 150%;
+    }
 
-        .errorknap{
-            background-color: #343B34;
-            color: #EFECE6;
-            border: none;
-            padding: 15px 32px;
+    .errorknap{
+    background-color: #343B34;
+    color: #EFECE6;
+    border: none;
+    padding: 15px 32px;
         
-            text-align: center;
-            font-size: 16px;
-            text-decoration: none;
-            text-transform: uppercase;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
 
 
