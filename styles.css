@@ -118,96 +118,105 @@ body{
     background-color: #EFECE6;
 }
 
+/* -------------------- HEADER -------------------- */
 
-
-   /* navbar*/
-/* placering af menupunkterne af navbaren */
-.desktopmenu1{
-    display: flex;
-    gap: 200px;
-    justify-content: space-around;
-    padding-top: 30px;
+.main-logo {
+    width:65%;
+    cursor: pointer;
 }
 
-/* styling af a tags i headeren om ikke skal have drop down */
-.desktopmenu1 > a{
+.kurv:hover {
+    max-width: 32%;
+    transition: .5s ease;
+}
+
+.top-nav{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 120px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.top-nav-a{
+    font-size: 20px;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 300;
     font-style: normal;
-    color:#343B34;
-    font-size: 16px;
-    text-decoration:none;
+    color: #343B34;
     text-transform: uppercase;
-    
-}
-
-nav> a:hover{
-    font-weight: 800;
-}
-
-.desktopmenu2{
-    display: flex;
-   background-color: #586056;
-   padding-bottom: 20px;
-    justify-content: space-around;
-    padding-top: 30px;
-   
-}
-.desktopmenu2 > a{
-    font-style: normal;
-    color:#EFECE6;
-    font-size: 16px;
-    text-decoration:none;
-    text-transform: uppercase;
-}
-
-/* dropdown styling i navbaren */
-.dropbtn {
-    background-color: transparent;
-    font-weight: 400;
-    font-style: normal;
-    color:#EFECE6;
-    font-size: 16px;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.top-nav-a:hover {
+    font-weight: 400;
+}
+
+.top-nav :nth-child(4){
+    grid-column: span 2;
+    display: grid;
+    justify-items: center;
+}
+
+.sub-nav{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    background-color:#586056;
+    padding: 1% 0%;
+}
+
+.sub-nav-a{
+    font-size: 20px;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #EFECE6;
     text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    background: none;
     border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #586056;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: #EFECE6;
+    font-size: 20px;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;   
+    display: block;
+    padding: 12px 16px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 
-/* display none, da content i dropdown skal være gemt væk når man ikke hover over det */
-    .dropdown-content {
- display: none;
-        position: absolute;
-        background-color:#586056;
-        font-weight: 400;
-        font-style: normal;
-        color:#EFECE6;
-        font-size: 13pt;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-    
-        min-width: 110px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.075);
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        color: #f7f8f6;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-    
-      /* dropdown hover  */
-    
-      /* skift af baggrundfarve og font weight når man over */
-      .dropdown-content a:hover {
-          background-color:#343B34;
-          font-weight: 800;
-        }
-      /* display bliver ændret til blok, for at vise content når man hover */
-      .dropdown:hover .dropdown-content {
-          display: block;
-        }
+  .dropdown-content a:hover {
+    background-color: #343B34;
+    color: #EFECE6;
+  }
 
+  .dropbtn:hover, .sub-nav-a:hover{
+    font-weight: 400;
+  }
 
 /*forside - sektion med teaser*/
 
@@ -346,7 +355,121 @@ nav> a:hover{
 
 /* -------------------- MEDIA QUERIES -------------------- */
 
+@media only screen and (min-width:1024px){
+    .burgermenu {
+        display: none;
+    }
+
+    .kurv{
+        max-width: 30%;
+    }
+
+    .hovedmenu-ikon {
+        display: block;
+    }
+
+    .burgermenu-ikon {
+        display: none;
+    }
+}
 @media only screen and (max-width:1024px){
+
+    /* header */
+    .top-nav-a, .sub-nav {
+        display: none;
+    }
+    .top-nav {
+        background-color: #586056;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 160px;
+    }
+
+    .burgermenu{
+        width: 50px;
+    }
+
+    .kurv{
+        width: 60px;
+    }
+
+    .hovedmenu-ikon {
+        display: none;
+    }
+
+    .top-nav :nth-child(4){
+        display: none;
+    }
+
+    /* burger menu */
+    #burgermenu-body{
+        background-color: #586056;
+        padding: 10%;
+    }
+
+    #brugermenu-exit{
+            width: 50px;
+    }
+
+    #burgermenu-nav{
+        padding-top: 60px;
+            display: grid;
+            justify-items: center;
+            justify-content: center;
+            gap: 30px;
+    }
+
+    .dropbtn .sub-nav-a{
+        padding:0;
+    }
+
+    .collapsible {
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 15px;
+      }
+      
+    .collapsible:hover {
+    font-weight: 400;
+    }
+
+      .content {
+        padding: 20px 18px;
+        display: none;
+        overflow: hidden;
+        background-color: none;
+        font-size: 18px;
+        font-family: josefin-sans, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        border-top: 1px solid #EFECE6;
+        
+      }
+
+      .content a{
+        display: grid;
+        justify-items: center;
+        color: #EFECE6;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      .foldedmenu-font{
+        font-size: 20px;
+        font-family: josefin-sans, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: #EFECE6;
+        text-transform: uppercase;
+        text-decoration: none;
+        overflow: hidden;
+        background: none;
+        border: none;
+      }
+
+
+    /* Instagram feed */
     .instagram-grid{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -382,7 +505,10 @@ nav> a:hover{
 }
 
 @media only screen and (max-width:580px){
-
+    /* header */
+    .top-nav{
+        grid-template-rows: 140px;
+    }
 }
 
 @media only screen and (max-width:425px){
