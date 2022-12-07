@@ -67,11 +67,13 @@ h1 {
     font-weight: 100;
     font-style: normal;
     text-transform: uppercase;
+    color: #343B34;
 }
 
 h2{
     font-size: 140px;
     font-family: Qwitcher;
+    color: #343B34;
 }
 
 h3 {
@@ -80,6 +82,7 @@ h3 {
     font-weight: 100;
     font-style: normal;
     text-transform: uppercase;
+    color: #343B34;
 }
 
 h4 {
@@ -87,6 +90,7 @@ h4 {
     font-family: josefin-sans, sans-serif;
     font-weight: 100;
     font-style: normal;
+    color: #343B34;
 }
 
 p {
@@ -94,6 +98,7 @@ p {
     font-family: josefin-sans, sans-serif;
     font-weight: 100;
     font-style: normal;
+    color: #343B34;
 }
 
 .priser {
@@ -102,11 +107,18 @@ p {
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
+    color: #343B34;
+}
+
+.beige-font {
+    color: #EFECE6;
 }
 
 body{
     background-color: #EFECE6;
 }
+
+
 
    /* navbar*/
 /* placering af menupunkterne af navbaren */
@@ -281,6 +293,11 @@ nav> a:hover{
     transform: rotate(345deg);
 }
 
+#instagram-mobil:hover {
+    transform: rotate(340deg);
+    transition: .5s ease;
+}
+
 .instagram-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -316,8 +333,6 @@ nav> a:hover{
   }
   
   .instagram-text {
-    color: white;
-    font-size: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -328,10 +343,6 @@ nav> a:hover{
     text-decoration: none;
   }
 
-  .instagram-text:hover {
-    font-size: 30px;
-    transition: .5s ease;
-  }
 /* -------------------- MEDIA QUERIES -------------------- */
 
 @media only screen and (max-width:1024px){
