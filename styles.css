@@ -260,7 +260,7 @@ nav> a:hover{
     padding-bottom: 50px;
     font-size: x-large;
     text-align: center;
-    line-height: 150%;
+    line-height: 145%;
     }
 
     .errorknap{
@@ -275,6 +275,90 @@ nav> a:hover{
     text-transform: uppercase;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
+
+
+/*--------------------- KORSSTING --------------------------*/
+
+.korssting_top{
+   display: flex;
+   flex-direction: row;
+}
+
+
+#paaske-lyseroed{
+    max-width: 100%;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+
+#blaabilpaavaeg{
+    max-width: 100%;
+}
+
+.korssting_overskrift, h1{
+    padding-top: 350px;
+}
+
+.korssting_underoverskrift{
+    padding-top: 20px;
+    padding-left: 200px;
+}
+
+
+.korssting_topmid{
+    background-color:#D9D9D1;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.korssting_tekst_topmid{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 100px;
+}
+
+.broedtekst_korssting{
+    padding-top: 30px;
+    line-height: 40px;
+}
+
+
+#korssting_sok{
+    max-width: 100%;
+}
+
+#korssting_pude{
+    width: 40%;
+    padding-left: 250px;
+}
+
+
+.korssting_bottommid{
+    margin: 200px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ 
+}
+
+.video_innersection_korssting{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+.video_thumbnail{
+    max-width: 100%;
+}
+
+.korssting_tekst_bottommid{
+    padding-left: 40px;
+}
 
 
 /* -------------------- INSTAGRAM FEED -------------------- */
