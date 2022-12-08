@@ -262,11 +262,15 @@ border-style:none;
 
 
 /*sektion forside - kundeanmeldelser*/
-
+        #anmeldelserrow{
+            flex-direction: row;
+            display: flex;
+        }
 
         .boksanmeldelser{
             padding-left: 300px;
             margin: 0 auto;
+            
         }
         .Venstrebilledeanmeldelse{
             
@@ -284,12 +288,17 @@ border-style:none;
             justify-content: center;
             padding: 30px;
             color: #EFECE6;    
+
         }
 
         #anmeldelsetekst{
             color: #EFECE6;
             text-align:left;
-            margin-top: 80px;
+            margin-top: 60px;
+        }
+
+        #hjerteanmeldelse{
+            margin-left: 300px;
         }
 
 /*Errorside*/
