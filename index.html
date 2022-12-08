@@ -15,17 +15,20 @@
   <body>
     <!-- sektion med "gå på opdagelse i vores julekollektion" -->
     <section>
-        <div class="flexbilleder">
-            <img class="teaserbillede1" src="images/1stroempe.jpg" alt="julestrømpe med mand på" />
-            <img class="teaserbillede2" src="images/3julesokker.jpg" alt="3 julestrømper på række" /> 
-            <img class="teaserbillede3" src="images/Kalendermennekser.jpg" alt="Kalender med soldater på"/>
+        <div class="teaserjulebilleder">
+          
+            <div id="teaserjulebillede1"><img  src="images/1stroempe.jpg" alt="julestrømpe med mand på" /></div>
+            <div id="teaserjulebillede2"><img src="images/3julesokker.jpg" alt="3 julestrømper på række" /> </div>
+            <div id="teaserjulebillede3"><img src="images/Kalendermennekser.jpg" alt="Kalender med soldater på"/></div>
         </div>
-
         <div class="teasertekst">
           <h1>Gå på opdagelse i</h1>
           <h2>Vores julekollektion</h2>
         </div>
-        <div class="teaserbrodtekst">
+        
+         
+        
+        <div id="teaserbrodtekst">
           <h4>
             Nu kan du gå på opdagelse i vores <br />
             kreative julebroderier. De er med til <br />at skabe den perfekte
@@ -33,22 +36,24 @@
           </h4>
         </div>
       
-    </section>
-
-    <section class="komgodtigangsektion">
-      <div class="bokskomgodtigang">
-        <div class="Venstrebillede">
-          <img src="images/pexels-zeys-14006558.jpg" alt="Broderingsbillede" />
-        </div>
-        <div class="Højrebillede">
-          <div>
-            <h3 id="komgodtigangtekst">Kom godt i gang med dit projekt</h3>
-            <br/><br/>
-            <p id="komgodtigangtekst">
-              denne tekst skal skrives. denne tekst skal skrives. denne tekst
-              skal skrives. denne tekst skal skrives
-            </p>
-            <a href="#" class="knapkomgodtigang">Lær at brodere</a>
+  </section>
+<!------------------- LÆR AT BRODERE SECTION ----------------->
+    <section>
+      <div id="baggrundstjerner">
+        <div class="bokskomgodtigang">
+          <div class="Venstrebillede">
+            <img src="images/pexels-zeys-14006558.jpg" alt="Broderingsbillede" />
+          </div>
+          <div class="Højrebillede">
+            <div>
+              <h3 id="komgodtigangtekst">Kom godt i gang med dit projekt</h3>
+              <br/><br/>
+              <p id="komgodtigangtekst">
+                denne tekst skal skrives. denne tekst skal skrives. denne tekst
+                skal skrives. denne tekst skal skrives
+              </p>
+              <a href="#" id="knapkomgodtigang">Lær at brodere</a>
+            </div>
           </div>
         </div>
       </div>
@@ -115,7 +120,26 @@
         </a>
       </div>
     </section>
-
+<!------------------- Kundeanmeldelser - SECTION ----------------->
+    <section class="kreakundeanmeldelse">
+      <div id="baggrundstjerner">
+        <div class="boksanmeldelser">
+          <div class="Venstrebilledeanmeldelse">
+              <img src="images/vaseaeg1.jpg" alt="Påskeæg" />
+          </div>
+            <div class="Højresektionanmeldelser">
+              <div>
+                <h3 id="anmeldelsetekst">Kom godt i gang med dit projekt</h3>
+                <br/><br/>
+                <p id="anmeldelsetekst">
+                  denne tekst skal skrives. denne tekst skal skrives. denne tekst
+                  skal skrives. denne tekst skal skrives
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
