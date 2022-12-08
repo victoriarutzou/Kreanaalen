@@ -149,7 +149,90 @@ body{
     }
 
 
+    .teaseroverlay{
+        display: grid;
+    }
+
+    .teaserbillede:first-of-type{
+        grid-column: 1 / span 3;
+        grid-row: 1/ span 2;
+
+    }
+    .teaserbillede{
+        grid-column: 8/ span 3;
+        grid-row: 1/ span 5;
+        
+    }
+    .teasertekst{
+        margin-top: 60px;
+        
+    }
+    .teaserbillede:last-of-type{
+        grid-column: 2/ span 3;
+        grid-row: 2/ span 1;
+        
+    }
+    .teaserbrodtekst{
+        text-align: end;
+        
+    }
+   
+/*sektion forside - kom godt i gang*/
+
+    .sektionkomgodtigang{
+        min-height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bokskomgodtigang{
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Venstrebillede{
+        width: 40%;
+        height: 400px;
+        margin-bottom: 145px;   
+    }
+
+    .Højrebillede {
+        width: 50%;
+        min-height: 600px;
+        background-color:#586056;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        color: #EFECE6;    
+    }
+
+    .komgodtigangtekst,h3,p{
+        color: #EFECE6;
+        text-align:left;
+    }
+    .knapkomgodtigang{
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-top: 30px;
+        border: 4px solid #EFECE6;
+        color: #EFECE6;
+        padding: 20px 30px;
+        display: inline-block;
+        letter-spacing: 2px;
+        justify-content: center;
+    }
+    
+
+
 /*sektion forside - kundeanmeldelser*/
+
+
 
 /*Errorside*/
 
@@ -207,7 +290,7 @@ body{
     max-width: 100%;
 }
 
-.korssting_overskrift, h1{
+.korssting_overskrift, h1{ 
     padding-top: 350px;
 }
 
@@ -338,6 +421,96 @@ body{
     text-decoration: none;
   }
 
+  .instagram-text:hover {
+    font-size: 30px;
+    transition: .5s ease;
+  }
+
+/*----------------------LAER AT BRODERE ------------------*/
+/*TOPSECTION*/
+/*Display Grid for hele sektionen*/
+.brodere_topsection {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto; /*Så indholdet bestemmer størrelsen*/
+    padding-bottom: 200px; /*afstand til næste afsnit*/
+  }
+/*Placering de tre divs i grid, og elementernes størrelse*/
+  .brodere_topsection_big_picture {
+    grid-column: 1 /3;
+    grid-row: 1 / 6;
+    max-width: 40vw; 
+    min-width: 30vw;
+  }
+  .brodere_topsection_small_picture {
+    grid-column: 2 / 4;
+    grid-row: 2 / 5;
+    max-width: 30vw;
+    min-width: 20vw;
+  }
+  .brodere_topsection_text {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+  }
+  /*2ND_SECTION*/
+  .brodere_2nd_section {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto; 
+    padding-bottom: 200px;
+  }
+  .brodere_2nd_section_small_picture {
+    grid-column: 1;
+    grid-row: 2 / 3;
+    max-width: 30vw; 
+    min-width: 10vw;
+  }
+  .brodere_2nd_section_text {
+    grid-column: 2;
+    grid-row: 2 / 3;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .brodere_2nd_section_big_picture {
+    grid-column: 3;
+    grid-row: 1 / 4;
+    max-width: 30vw;
+    min-width: 5vw;
+  }
+  /*3RD_SECTION*/
+  .brodere_3rd_section{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto; 
+    padding-bottom: 200px;
+  }
+
+  /*4TH_SECTION*/
+  .brodere_4th_section{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto; 
+    padding-bottom: 200px;
+  }
+  .brodere_4th_section_small_picture {
+    grid-column: 1;
+    grid-row: 2 / 3;
+    max-width: 30vw; 
+   /* min-width: 10vw;*/
+  }
+  .brodere_4th_section_text {
+    grid-column: 2;
+    grid-row: 2 / 3;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .brodere_4th_section_big_picture {
+    grid-column: 3;
+    grid-row: 1 / 4;
+    max-width: 30vw;
+   /* min-width: 5vw;*/
+  }
+
 /* -------------------- MEDIA QUERIES -------------------- */
 
 @media only screen and (max-width:1024px){
@@ -372,6 +545,20 @@ body{
 
     .priser {
         font-size: 16px;
+    }
+    .bokskomgodtigang{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 20px;
+    }
+    .Venstrebillede{
+        width: 100%;
+        
+    }
+    .Højrebillede{
+        width: 60%;
+        margin: 0;
+        margin-top: -100px;
     }
 }
 
