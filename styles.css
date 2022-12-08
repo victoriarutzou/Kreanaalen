@@ -121,61 +121,14 @@ body{
 
 /*forside - sektion med teaser*/
 
-    .teaseroverlay {
-    display: grid;       
-    grid-template-columns: repeat(5,1fr);
-    width: 100%;
-    margin: 0 auto;
-    max-width: 500px;
-    grid-column: 1/5;       
-    grid-template-columns: repeat(12, 1fr);
-    border: 5px solid var(--clr primary);
-    }
-          
-    .teaserbillede1 {
-    grid-column: 1 / 3;
-            
-    }
-          
-    .teaserbillede2 {
-    align-self: center;
-    grid-column: 2 / span -1;
-            
-          }
+    
+.flexbilleder{
+    display: flex;
+}
 
-          
-    .teaserbillede1, .teaserbillede2 {
-    grid-row: 1/2;
-    }
-
-
-    .teaseroverlay{
-        display: grid;
-    }
-
-    .teaserbillede:first-of-type{
-        grid-column: 1 / span 3;
-        grid-row: 1/ span 2;
-
-    }
-    .teaserbillede{
-        grid-column: 8/ span 3;
-        grid-row: 1/ span 5;
-        
-    }
-    .teasertekst{
-        margin-top: 60px;
-        
-    }
-    .teaserbillede:last-of-type{
-        grid-column: 2/ span 3;
-        grid-row: 2/ span 1;
-        
-    }
-    .teaserbrodtekst{
-        text-align: end;
-        
-    }
+.teaserbillede2{
+    height: auto;
+}
    
 /*sektion forside - kom godt i gang*/
 
