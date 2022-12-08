@@ -118,6 +118,68 @@ body{
     background-color: #EFECE6;
 }
 
+.btn_line_green { /*Knap UDEN fyldt farve. Grønt outline.*/
+width: 316px;
+height: 84px;
+cursor:pointer;
+font-size: 30px;
+font-family: josefin-sans, sans-serif;
+font-weight: 400;
+font-style:normal;
+text-transform: uppercase;
+color:#586056;
+background-color: transparent;
+border-style: solid;
+border-color:#586056;
+border-width: 4px;
+
+}
+
+.btn_line_beige { /*Knap UDEN fyldt farve. Beige outline.*/
+  width: 316px;
+  height: 84px;
+  cursor:pointer;
+  font-size: 30px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 400;
+  font-style:normal;
+  text-transform: uppercase;
+  color:#EFECE6;
+  background-color: transparent;
+  border-style: solid;
+  border-color:#EFECE6;
+  border-width: 4px;
+  
+  }
+
+.btn_filled_darkgreen{ /*Knap MED fyldt farve. MØRKE Grønt fyld.*/
+  width: 316px;
+height: 84px;
+cursor:pointer;
+font-size: 30px;
+font-family: josefin-sans, sans-serif;
+font-weight: 400;
+font-style:normal;
+text-transform: uppercase;
+color:#EFECE6;
+background-color:#586056;
+border-style:none;
+}
+
+.btn_filled_lightgreen{ /*Knap MED fyldt farve. LYSE Grønt fyld.*/
+  width: 316px;
+height: 84px;
+cursor:pointer;
+font-size: 30px;
+font-family: josefin-sans, sans-serif;
+font-weight: 400;
+font-style:normal;
+text-transform: uppercase;
+color:#343B34;
+background-color:#D9D9D1;
+border-style:none;
+}
+
 
 /*forside - sektion med teaser*/
 
@@ -437,7 +499,10 @@ body{
     grid-template-columns: auto; 
     padding-bottom: 200px;
   }
-  .brodere_3rd_section_box {}
+  .brodere_3rd_section_box {
+    background-color:#586056; /* laver en grøn boks*/
+    padding: 20px; /*til whitespace rundt om teksten*/
+  }
   .brodere_3rd_section_picture{}
 
   /*4TH_SECTION*/
