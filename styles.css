@@ -297,7 +297,7 @@ nav> a:hover{
     max-width: 100%;
 }
 
-.korssting_overskrift, h1{
+.korssting_overskrift, h1{ 
     padding-top: 350px;
 }
 
@@ -428,8 +428,6 @@ nav> a:hover{
     text-decoration: none;
   }
 
-<<<<<<< Updated upstream
-=======
   .instagram-text:hover {
     font-size: 30px;
     transition: .5s ease;
@@ -487,6 +485,13 @@ nav> a:hover{
     min-width: 5vw;
   }
   /*3RD_SECTION*/
+  .brodere_3rd_section{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto; 
+    padding-bottom: 200px;
+  }
+
   /*4TH_SECTION*/
   .brodere_4th_section{
     display: grid;
@@ -513,7 +518,6 @@ nav> a:hover{
    /* min-width: 5vw;*/
   }
 
->>>>>>> Stashed changes
 /* -------------------- MEDIA QUERIES -------------------- */
 
 @media only screen and (max-width:1024px){
