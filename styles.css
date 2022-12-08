@@ -230,7 +230,7 @@ body{
     }
 
     .teaserbillede:first-of-type{
-        grid-column: 1 / span 2;
+        grid-column: 1 / span 3;
         grid-row: 1/ span 2;
 
     }
@@ -242,17 +242,14 @@ body{
     .teasertekst{
         margin-top: 60px;
         
-       
     }
     .teaserbillede:last-of-type{
-        grid-column: 2/ span 2;
+        grid-column: 2/ span 3;
         grid-row: 2/ span 1;
         
     }
     .teaserbrodtekst{
         text-align: end;
-        
-        grid-column: 2/ span 2;
         
     }
    
@@ -261,7 +258,8 @@ body{
     .sektionkomgodtigang{
         min-height: 100vh;
         width: 100%;
-        display: flex;
+        background-image: url(images/baggrundtstjerner.png) no-repeat center/cover;
+
         align-items: center;
         justify-content: center;
     }
@@ -307,10 +305,13 @@ body{
         padding: 20px 30px;
         display: inline-block;
         letter-spacing: 2px;
+        justify-content: center;
     }
     
 
 /*sektion forside - kundeanmeldelser*/
+
+
 
 /*Errorside*/
 
