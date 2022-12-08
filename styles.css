@@ -363,32 +363,44 @@ border-style:none;
 
 
 /*sektion forside - kundeanmeldelser*/
+        #anmeldelserrow{
+            flex-direction: row;
+            display: flex;
+        }
 
-/* -------------------- Footer -------------------- */
+        .boksanmeldelser{
+            padding-left: 300px;
+            margin: 0 auto;
+            
+        }
+        .Venstrebilledeanmeldelse{
+            
+            width: 20%;
+            margin-left: 20px;
+            margin-bottom: -100px;
+        }
 
-footer {
-    background-color:#586056;
-    padding: 4% 0%;
-}
+        .Højresektionanmeldelser {
+            width: 50%;
+            min-height: 300px;
+            background-color:#586056;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            color: #EFECE6;    
 
+        }
 
-.footer-links-a{
-    color: #EFECE6;
-    font-size: 20px;
-    font-family: josefin-sans, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-decoration: none;
-}
-.footer-links-a:hover{
-    font-weight: 400;
-}
-.soMe-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 30px);
-    gap: 36px;
-    align-items: center;
-}
+        #anmeldelsetekst{
+            color: #EFECE6;
+            text-align:left;
+            margin-top: 60px;
+        }
+
+        #hjerteanmeldelse{
+            margin-left: 300px;
+        }
 
 /*Errorside*/
 
