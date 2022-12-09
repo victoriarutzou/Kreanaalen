@@ -305,9 +305,9 @@ border-style:none;
     max-width: 100%;
 }
 
-.korssting_overskrift, h1{ 
+/*.korssting_overskrift, h1{ 
     padding-top: 350px;
-}
+}*/
 
 .korssting_underoverskrift{
     padding-top: 20px;
@@ -466,8 +466,12 @@ border-style:none;
   .brodere_topsection_text {
     grid-column: 3 / 5;
     grid-row: 3 / 4;
+    padding-right: 100px;
   }
   /*2ND_SECTION*/
+  .broderer_2nd_section_mobilepicture{
+    display: none; /*fjerner billedet fra mobil versionen*/
+  }
   .brodere_2nd_section {
     display: grid;
     grid-gap: 20px;
@@ -500,6 +504,7 @@ border-style:none;
     padding-bottom: 200px;
     padding-left: 50px;
     padding-right: 50px;
+    background-image: url(images/baggrundtstjerner.png);
   }
   .brodere_3rd_section_box {
     background-color:#586056; /* laver en grøn boks*/
@@ -552,6 +557,53 @@ border-style:none;
     #instagram-mobil {
         display: none;
     }
+    /*Lær at brodere*/
+    /*Topsection*/
+  .brodere_topsection{
+    padding: 5vw; 
+  }
+  /*Ændre elementernes placering i grid*/
+  .brodere_topsection_big_picture {
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+  }
+  .brodere_topsection_small_picture {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+  .brodere_topsection_text {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    padding: 0; /*fjerner padding*/
+    text-align: center; /*centrer tekst*/
+  }
+  /*2ND_SECTION*/
+  .brodere_2nd_section {
+  margin:5vw;
+  padding: 0; /*nulstiller padding*/
+  grid-template-rows: 5vw auto; /*Ændre grid*/
+  grid-template-columns: 5vw auto 10vw;
+  }
+  .brodere_2nd_section_small_picture {
+  display:none; /*fjerner billede*/
+  }
+  .brodere_2nd_section_big_picture {
+    display:none; /*fjerner billede*/
+  }
+  .brodere_2nd_section_text {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #D9D9D1; /*Laver den om til en farvet boks*/
+    padding:2vw;
+    text-align: center; /*centrer tekst*/
+ 
+  }
+  .broderer_2nd_section_mobilepicture{
+    display: block; /*tilføjer nyt billede*/
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+
 }
 
 @media only screen and (max-width:768px){
